@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{96fe9844-ec4a-417a-8a32-b6fdf7c8c2ba}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>train.py</StartupFile>
+    <SearchPath>face-alignment_projection</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|3.7</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="dataset\reader.py" />
+    <Compile Include="face-alignment_projection\examples\detect_landmarks_in_image.py" />
+    <Compile Include="face-alignment_projection\face_alignment\api.py" />
+    <Compile Include="face-alignment_projection\face_alignment\detection\core.py" />
+    <Compile Include="face-alignment_projection\face_alignment\detection\dlib\dlib_detector.py" />
+    <Compile Include="face-alignment_projection\face_alignment\detection\dlib\__init__.py" />
+    <Compile Include="face-alignment_projection\face_alignment\detection\folder\folder_detector.py" />
+    <Compile Include="face-alignment_projection\face_alignment\detection\folder\__init__.py" />
+    <Compile Include="face-alignment_projection\face_alignment\detection\sfd\bbox.py" />
+    <Compile Include="face-alignment_projection\face_alignment\detection\sfd\detect.py" />
+    <Compile Include="face-alignment_projection\face_alignment\detection\sfd\net_s3fd.py" />
+    <Compile Include="face-alignment_projection\face_alignment\detection\sfd\sfd_detector.py" />
+    <Compile Include="face-alignment_projection\face_alignment\detection\sfd\__init__.py" />
+    <Compile Include="face-alignment_projection\face_alignment\detection\__init__.py" />
+    <Compile Include="face-alignment_projection\face_alignment\models.py" />
+    <Compile Include="face-alignment_projection\face_alignment\utils.py" />
+    <Compile Include="face-alignment_projection\face_alignment\__init__.py" />
+    <Compile Include="face-alignment_projection\get_landmarks.py" />
+    <Compile Include="face-alignment_projection\test\facealignment_test.py" />
+    <Compile Include="face-alignment_projection\test\smoke_test.py" />
+    <Compile Include="face-alignment_projection\test\test_utils.py" />
+    <Compile Include="model\D.py" />
+    <Compile Include="model\E.py" />
+    <Compile Include="model\FaceSwapModel.py" />
+    <Compile Include="model\G.py" />
+    <Compile Include="model\loss.py" />
+    <Compile Include="model\resblocks.py" />
+    <Compile Include="model\vgg_face.py" />
+    <Compile Include="model\__init__.py" />
+    <Compile Include="train.py" />
+    <Compile Include="utils.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dataset\video_clips_path.txt" />
+    <Content Include="dataset\video_landmarks_path.txt" />
+    <Content Include="face-alignment_projection\docs\images\2dlandmarks.png" />
+    <Content Include="face-alignment_projection\docs\images\face-alignment-adrian.gif" />
+    <Content Include="face-alignment_projection\songyiren.jpg" />
+    <Content Include="face-alignment_projection\test\assets\aflw-test.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_100.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_1000.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_1100.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_1200.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_1300.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_1400.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_1500.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_1600.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_1700.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_1800.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_1900.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_200.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_2000.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_2100.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_2200.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_2300.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_300.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_400.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_500.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_600.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_700.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_800.jpg" />
+    <Content Include="training_visual\temp_fake_gt_landmark_900.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dataset" />
+    <Folder Include="face-alignment_projection" />
+    <Folder Include="face-alignment_projection\docs\" />
+    <Folder Include="face-alignment_projection\docs\images" />
+    <Folder Include="face-alignment_projection\examples" />
+    <Folder Include="face-alignment_projection\face_alignment" />
+    <Folder Include="face-alignment_projection\face_alignment\detection" />
+    <Folder Include="face-alignment_projection\face_alignment\detection\dlib" />
+    <Folder Include="face-alignment_projection\face_alignment\detection\folder" />
+    <Folder Include="face-alignment_projection\face_alignment\detection\sfd" />
+    <Folder Include="face-alignment_projection\test" />
+    <Folder Include="face-alignment_projection\test\assets" />
+    <Folder Include="model" />
+    <Folder Include="training_visual" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.7" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
